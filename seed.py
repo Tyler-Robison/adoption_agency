@@ -18,7 +18,7 @@ p2 = Pet(name='Ben', species='Turtle', age=28, notes='Somewhat old', available=F
 p3 = Pet(name='Sarah', species='Turtle', notes='Very old', available=True)
 p4 = Pet(name='Billy', species='Dog', notes='Billy is annoying', available=True)
 p5 = Pet(name='Birb', species='Bird', notes='Birb is the word', available=False)
-p6 = Pet(name='Fluffy', species='Cat', age=8, notes='Very old', available=False)
+p6 = Pet(name='Fluffy', species='Cat', age=8, notes='Very sweet', available=False)
 p7 = Pet(name='Jumpy', species='Cat', photo_url=pic2, age=13)
 p8 = Pet(name='Angry', species='Bird', age=6)
 

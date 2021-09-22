@@ -1,0 +1,18 @@
+{{ form.hidden_tag() }}
+<!-- Add type=hidden form fields-->
+
+{% for field in form
+if field.widget.input_type != 'hidden' %}
+
+
+<p>
+    {{field.label}}
+    {{field(class_="red-thing")}}
+
+
+    {% for err in field.errors %}
+    {{ err}}
+    {% endfor %}
+</p>
+
+{%endfor%}

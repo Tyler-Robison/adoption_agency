@@ -12,7 +12,7 @@ def connect_db(app):
 class Pet(db.Model):
     """Pet model"""
 
-    __tablename__='pets'    
+    __tablename__= 'pets'    
 
     id = db.Column(db.Integer,
                     primary_key = True,

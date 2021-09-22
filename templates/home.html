@@ -1,0 +1,27 @@
+{% extends 'index.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block main %}
+
+<h1>Adoption Agency</h1>
+
+<form action="/add">
+    <button>Add Pet</button>
+</form>
+
+
+<h2>Available Pets!</h2>
+
+{% for pet in avail %}
+{% include 'pet_list.html'%}
+{% endfor %}
+
+<h2>Unavailable Pets!</h2>
+
+{% for pet in unavail %}
+{% include 'pet_list.html'%}
+{% endfor %}
+
+
+{% endblock %}

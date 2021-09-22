@@ -16,8 +16,3 @@ CREATE TABLE pets (
     notes TEXT,
     available BOOLEAN NOT NULL DEFAULT true
 );
-
--- seed.py doesn't work but this does
-INSERT INTO pets (name, species, photo_url, age, notes, available)
-VALUES
-('Alvin', 'Turtle', 'URL', 57, 'old', True)

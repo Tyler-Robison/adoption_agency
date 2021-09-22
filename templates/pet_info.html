@@ -1,0 +1,24 @@
+{% extends 'index.html' %}
+
+{% block title %} Pet info {% endblock %}
+
+{% block main %}
+
+<h1>Adoption Agency</h1>
+
+
+{% include 'pet_list.html'%}
+
+
+<form action="/{{pet.id}}" method="POST">
+    {% include 'pet_form.html'%}   
+
+    <button>Edit Pet</button>
+</form>
+
+
+
+<a href="/">Back to Homepage</a>
+
+
+{% endblock %}

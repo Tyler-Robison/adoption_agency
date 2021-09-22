@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+
+{% block title %} Add Pet {% endblock %}
+
+{% block main %}
+
+<h1>Add Pet</h1>
+
+<form action="/add" method="POST">
+    {% include 'pet_form.html'%}   
+
+    <button>Add Pet</button>
+</form>
+
+
+
+<br>
+
+<a href="/">Back to Homepage</a>
+
+{% endblock %}

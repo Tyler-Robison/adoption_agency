@@ -1,0 +1,31 @@
+<div class="pet-div">
+
+<p>Name: <a href="/{{pet.id}}">{{pet.name}}</a></p>
+<p>Species: {{pet.species}}</p>
+
+{% if pet.photo_url %}
+<img src="{{pet.photo_url}}" alt="" class="pet-img">
+{% else %}
+<p>Photo Not Available</p>
+{% endif %}
+
+{% if pet.age %}
+<p>Age: {{pet.age}}</p>
+{% else %}
+<p>Age data not available</p>
+{% endif %}
+
+
+{% if pet.notes %}
+<p>Notes: {{pet.notes}}</p>
+{% else %}
+<p>Notes not available</p>
+{% endif %}
+
+{% if pet.available %}
+<p>Pet is available</p>
+{% else %}
+<p>Pet is not Available</p>
+{% endif %}
+
+</div>
